@@ -5,5 +5,5 @@ URL: https://www.dftbplus.org
 
 Requires: 
 Libs: -L/home/inukai/dftbplus-21.1/dftb+/lib -lmudpack -ldftbplus
-Libs.private: /usr/lib/liblapack.dll.a /usr/lib/libblas.dll.a -L/usr/lib/gcc/x86_64-pc-cygwin/11 -L/usr/x86_64-pc-cygwin/lib -L/usr/lib -L/lib -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc -Wl,--enable-auto-import
+Libs.private: /usr/lib/liblapack.dll.a /usr/lib/libblas.dll.a /usr/lib/libarpack.dll.a -L/usr/lib/gcc/x86_64-pc-cygwin/11 -L/usr/x86_64-pc-cygwin/lib -L/usr/lib -L/lib -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc -Wl,--enable-auto-import
 Cflags: -I/home/inukai/dftbplus-21.1/dftb+/include/dftbplus/modfiles  

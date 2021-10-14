@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget DftbPlus::mudpack DftbPlus::dftbplus DftbPlus::DftbPlus)
+foreach(_expectedTarget DftbPlus::dftd3 DftbPlus::mudpack DftbPlus::dftbplus DftbPlus::DftbPlus)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -50,6 +50,13 @@ if(_IMPORT_PREFIX STREQUAL "/")
   set(_IMPORT_PREFIX "")
 endif()
 
+# Create imported target DftbPlus::dftd3
+add_library(DftbPlus::dftd3 STATIC IMPORTED)
+
+set_target_properties(DftbPlus::dftd3 PROPERTIES
+  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/dftd3/modfiles"
+)
+
 # Create imported target DftbPlus::mudpack
 add_library(DftbPlus::mudpack STATIC IMPORTED)
 
@@ -62,7 +69,7 @@ add_library(DftbPlus::dftbplus STATIC IMPORTED)
 
 set_target_properties(DftbPlus::dftbplus PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/dftbplus/modfiles;${_IMPORT_PREFIX}/include/dftbplus"
-  INTERFACE_LINK_LIBRARIES "DftbPlus::mudpack;OpenMP::OpenMP_Fortran;\$<LINK_ONLY:LAPACK::LAPACK>"
+  INTERFACE_LINK_LIBRARIES "DftbPlus::dftd3;Mbd::Mbd;Negf::Negf;DftbPlus::mudpack;OpenMP::OpenMP_Fortran;\$<LINK_ONLY:Arpack::Arpack>;\$<LINK_ONLY:LAPACK::LAPACK>"
 )
 
 # Create imported target DftbPlus::DftbPlus
