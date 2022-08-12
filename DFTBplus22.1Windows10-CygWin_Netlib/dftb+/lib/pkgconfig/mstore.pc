@@ -1,0 +1,10 @@
+prefix=/home/inukai/dftbplus-22.1/dftb+
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: mstore
+Description: Molecular structure store for testing
+Version: 0.2.0
+Requires: mctc-lib
+Libs: -L${libdir} -lmstore
+Cflags: -I${includedir} -I${includedir}/mstore/GNU-11.2.0

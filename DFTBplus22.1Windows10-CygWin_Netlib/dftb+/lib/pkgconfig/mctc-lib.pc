@@ -1,0 +1,10 @@
+prefix=/home/inukai/dftbplus-22.1/dftb+
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: mctc-lib
+Description: Modular computation tool chain
+Requires: 
+Version: 0.3.0
+Libs: -L${libdir} -lmctc-lib
+Cflags: -I${includedir} -I${includedir}/mctc-lib/GNU-11.2.0

@@ -1,0 +1,9 @@
+prefix=/home/inukai/dftbplus-22.1/dftb+
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: toml-f
+Description: A TOML parser implementation for data serialization and deserialization in Fortran
+Version: 0.2.2
+Libs: -L${libdir} -ltoml-f
+Cflags: -I${includedir} -I${includedir}/toml-f/GNU-11.2.0
