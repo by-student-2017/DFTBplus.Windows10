@@ -7,4 +7,4 @@ Description: Molecular structure store for testing
 Version: 0.2.0
 Requires: mctc-lib
 Libs: -L${libdir} -lmstore
-Cflags: -I${includedir} -I${includedir}/mstore/GNU-11.2.0
+Cflags: -I${includedir} -I${includedir}/mstore/GNU-11.3.0

@@ -6,4 +6,4 @@ Name: tblite
 Description: Light-weight tight-binding framework
 Version: 0.2.0
 Libs: -L${libdir} -ltblite
-Cflags: -I${includedir} -I${includedir}/tblite/GNU-11.2.0
+Cflags: -I${includedir} -I${includedir}/tblite/GNU-11.3.0

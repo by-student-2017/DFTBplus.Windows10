@@ -7,4 +7,4 @@ Description: Modular computation tool chain
 Requires: 
 Version: 0.3.0
 Libs: -L${libdir} -lmctc-lib
-Cflags: -I${includedir} -I${includedir}/mctc-lib/GNU-11.2.0
+Cflags: -I${includedir} -I${includedir}/mctc-lib/GNU-11.3.0

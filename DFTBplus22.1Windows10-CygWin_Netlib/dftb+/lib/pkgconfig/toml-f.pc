@@ -6,4 +6,4 @@ Name: toml-f
 Description: A TOML parser implementation for data serialization and deserialization in Fortran
 Version: 0.2.2
 Libs: -L${libdir} -ltoml-f
-Cflags: -I${includedir} -I${includedir}/toml-f/GNU-11.2.0
+Cflags: -I${includedir} -I${includedir}/toml-f/GNU-11.3.0

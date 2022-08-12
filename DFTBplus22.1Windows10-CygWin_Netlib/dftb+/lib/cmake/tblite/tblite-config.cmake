@@ -29,7 +29,7 @@ set("tblite_WITH_API" FALSE)
 set(
   "tblite_INCLUDE_DIRS"
   "/home/inukai/dftbplus-22.1/dftb+/include"
-  "/home/inukai/dftbplus-22.1/dftb+/include/tblite/GNU-11.2.0"
+  "/home/inukai/dftbplus-22.1/dftb+/include/tblite/GNU-11.3.0"
 )
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}")
 
