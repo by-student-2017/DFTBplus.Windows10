@@ -62,7 +62,7 @@ add_library(DftbPlus::dftbplus STATIC IMPORTED)
 
 set_target_properties(DftbPlus::dftbplus PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/dftbplus/modfiles;${_IMPORT_PREFIX}/include/dftbplus"
-  INTERFACE_LINK_LIBRARIES "Negf::Negf;DftbPlus::mudpack;s-dftd3::s-dftd3;mctc-lib::mctc-lib;OpenMP::OpenMP_Fortran;\$<LINK_ONLY:Arpack::Arpack>;LAPACK::LAPACK"
+  INTERFACE_LINK_LIBRARIES "Negf::Negf;DftbPlus::mudpack;s-dftd3::s-dftd3;tblite::tblite;mctc-lib::mctc-lib;OpenMP::OpenMP_Fortran;\$<LINK_ONLY:Arpack::Arpack>;LAPACK::LAPACK"
 )
 
 # Create imported target DftbPlus::DftbPlus

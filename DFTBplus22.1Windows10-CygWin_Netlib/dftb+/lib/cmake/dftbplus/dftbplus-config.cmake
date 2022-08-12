@@ -36,7 +36,7 @@ set(DftbPlus_WITH_ARPACK ON)
 set(DftbPlus_WITH_MBD OFF)
 set(DftbPlus_WITH_PLUMED OFF)
 set(DftbPlus_WITH_SDFTD3 ON)
-set(DftbPlus_WITH_TBLITE OFF)
+set(DftbPlus_WITH_TBLITE ON)
 set(DftbPlus_WITH_CHIMES OFF)
 
 include(CMakeFindDependencyMacro)
